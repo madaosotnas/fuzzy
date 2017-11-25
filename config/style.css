@@ -1,0 +1,149 @@
+body {
+	background:#D3D3D3;
+	font-size: 18px;
+	font-family: 'Slabo 27px',serif;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Slabo 27px';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Slabo 27px'), local('Slabo27px-Regular'), url(font1.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Slabo 27px';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Slabo 27px'), local('Slabo27px-Regular'), url(font2.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+.tengah {
+     margin: auto;
+     position: absolute;
+     top: 0; left: 0; bottom: 0; right: 0;
+     height: 580px;
+     border: 1px solid #FFF000;
+	 border-radius: 15px;
+	 width: 60%;
+}
+.header {
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	width: 100%;
+}
+.footer {
+	background: #FFF000;
+	text-align:center;
+	padding: 5px 0px;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	font-weight: bold;
+}
+.hidden-scrollbar {
+  color: #000;  
+  overflow:hidden;
+  text-align:justify;    
+}
+.hidden-scrollbar .inner {
+  height:330px;
+  overflow:auto;
+  margin:15px -300px 15px 15px;
+  padding-right: 300px;
+}
+input[type="text"] {
+  display: block;
+  margin: 0;
+  font-family: 'Slabo 27px',serif;
+  font-size: 14px;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+}
+input[type="text"]:focus {
+  outline: none;
+}
+.pencetan {
+    background: url("../gambar/bg-button-oren.png") repeat-x scroll left top #FFFF33;
+    border: 1px solid #E9DB00;
+    border-radius: 2px 2px 2px 2px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    color: #000;
+    font-size:14px;
+	padding:0 25px;
+	width:auto;
+	height:35px;
+	line-height:25px;
+	font-weight:bold;
+	cursor:pointer;
+	font-family: 'Slabo 27px',serif;
+	margin-top: 2%;
+}
+.pencetan:hover {
+    background: none repeat scroll 0 0 #E9DB00;
+    border: 1px solid #FFF000;
+	font-size:14px;
+	padding:0 25px;
+	width:auto;
+	height:35px;
+	line-height:25px;
+	margin-top: 2%;
+}
+.bar {
+  font-size:14px;line-height:1;margin-top:20px;border-bottom:2px solid #FFF000;font-weight:bold;}
+.bar text {
+  line-height:17px;letter-spacing:0.8px;display:inline-block;padding:7px 10px 4px 10px;background-color:#FFF000;color:#000;}
+hr {	border: 1px solid #000;line-height:0.1px;}
+div.box {font-size:108.3%;margin:2px 0 15px;padding:20px 15px 20px 65px;-moz-border-radius:6px;-webkit-border-radius:6px;border-radius:6px;
+}
+div.success-box {background:url("../gambar/check.png") no-repeat 15px center #ebfab6;border:1px solid #bbcc5b;color:#599847;}
+div.error-box   {background:url("../gambar/error.png") no-repeat 15px center #fdd2d1;border:1px solid #f6988f;color:#883333;
+}
+a {text-decoration: none;color: #0069ba; }
+a:hover {color: #5b5b5b; }
+.style-1 input[type="text"] {
+  padding: 10px;
+  border: solid 1px #dcdcdc;
+  transition: box-shadow 0.3s, border 0.3s;
+}
+.style-1 input[type="text"]:focus,
+.style-1 input[type="text"].focus {
+  border: solid 1px #FFF500;
+  box-shadow: 0 0 5px 1px #FFF000;
+}
+nav {
+	height: 40px;
+	width: 100%;
+	background: #FFF000;
+	font-size: 12pt;
+	font-weight: bold;
+	position: relative;
+}
+nav ul {
+	padding: 0;
+	margin: 0 auto;
+	width: 700px;
+	height: 40px;
+	position: absolute;
+}
+nav li {
+	display: inline;
+	float: left;
+}
+nav a {
+	color: #000;
+	display: inline-block;
+	width: 165px;
+	text-align: center;
+	text-decoration: none;
+	line-height: 40px;
+	cursor:pointer;
+}
+nav a:hover, nav a:active {
+	background-color: #009241;
+	color: #FFF;
+}
+nav a#pull {
+	display: none;
+}
